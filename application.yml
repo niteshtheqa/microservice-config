@@ -1,17 +1,9 @@
-# eureka:
-#   instance:
-#     prefer-ip-address: true
-#   client:
-#     fetch-registry: true   
-#     register-with-eureka: true
-#     service-url:
-#       defaultZone: http://127.0.0.1:49966/eureka 
-
 eureka:
+  instance:
+    prefer-ip-address: true
   client:
-    serviceUrl:
-      defaultZone: http://192.168.49.2:30689/eureka/   # Use the correct service registry URL
-    registerWithEureka: true   # The config server itself should not register with Eureka if unnecessary
-    fetchRegistry: true         # Ensure it fetches the service registry info
-
+    fetch-registry: true   
+    register-with-eureka: true
+    service-url:
+      defaultZone: http://192.168.49.2:30689/eureka/
       
