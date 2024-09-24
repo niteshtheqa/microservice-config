@@ -10,7 +10,7 @@
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://192.168.49.2:32388/eureka/   # Use the correct service registry URL
+      defaultZone: http://service-registry:30689/eureka/   # Use the correct service registry URL
     registerWithEureka: true   # The config server itself should not register with Eureka if unnecessary
     fetchRegistry: true         # Ensure it fetches the service registry info
 
